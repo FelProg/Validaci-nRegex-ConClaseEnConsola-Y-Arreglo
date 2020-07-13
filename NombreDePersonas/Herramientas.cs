@@ -9,7 +9,7 @@ namespace NombreDePersonas
     class Herramientas
     {
         //linea de validación con expresiones regulares aceptando letras, espacios,acentos y puntos.
-        Regex condicion = new Regex("^[a-zA-ZÀ-ÿ\\s\\.]*$");
+        Regex condicion = new Regex("^[\\S][a-zA-ZÀ-ÿ\\s\\.]*$");
        
         //devuelve con estructura ternaria verdadero si la entrada coincide con la validación.
         public bool ValidacionLetrasEspaciosAcentos(string paraValidar)
